@@ -1,10 +1,13 @@
 import Link from "next/link";
+import styles from "../styles/home.module.css";
 
 function Home() {
   return (
-    <div>
-      <h1>Welcome to My Blog!</h1>
-      <Link href="/blog">Go to Blog</Link>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Welcome to My Blog!</h1>
+      <Link href="/blog">
+        <a className={styles.link}>Go to Blog</a>
+      </Link>
     </div>
   );
 }

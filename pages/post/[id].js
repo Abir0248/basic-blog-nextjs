@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
-import blogData from "../data/blogData.json";
+import blogData from "../../data/blogData.json";
 
 function Post() {
   const router = useRouter();
-  const { id } = router.query;
-  const post = blogData.find((item) => item.id === parseInt(id, 10));
+  const postId = router.query.id;
+  const post = blogData.find((post) => post.id === parseInt(postId));
 
   if (!post) {
-    return <div>Post not found</div>;
+    return <div>Post not found.</div>;
   }
 
   return (

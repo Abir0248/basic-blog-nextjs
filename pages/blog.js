@@ -8,7 +8,9 @@ function Blog() {
       <ul>
         {blogData.map((post) => (
           <li key={post.id}>
-            <Link href={`/post/${post.id}`}>{post.title}</Link>
+            <Link href={`/post/${post.id}`}>
+              <a>{post.title}</a>
+            </Link>
           </li>
         ))}
       </ul>
