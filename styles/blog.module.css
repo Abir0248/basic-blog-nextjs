@@ -1,0 +1,12 @@
+.container {
+  padding: 20px;
+}
+
+.listItem {
+  margin-bottom: 10px;
+}
+
+.link {
+  color: green;
+  text-decoration: none;
+}
