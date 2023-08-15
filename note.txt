@@ -1,1 +1,1 @@
-https://euphonious-kulfi-26bc95.netlify.app/
+https://basic-blog-nextjs-bay.vercel.app/
